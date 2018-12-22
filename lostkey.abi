@@ -1,0 +1,59 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Dec 21 17:23:37 2018",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "logethadd",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ethaddress",
+                    "type": "string"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "newpubkey",
+                    "type": "public_key"
+                }
+            ]
+        },
+        {
+            "name": "regethkey",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sig",
+                    "type": "bytes"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "newpubkey",
+                    "type": "public_key"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "logethadd",
+            "type": "logethadd",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "regethkey",
+            "type": "regethkey",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
