@@ -9,9 +9,8 @@ def is_canonical( sig ):
      and not (sig[33] & 0x80)\
      and not (sig[33] == 0 and not (sig[34] & 0x80))
 
-priv = "3a1076bf45ab87712ad64ccb3b10217737f7faacbf2872e88fdd9a537d8fe266"
+priv = getpass("ETH private key: ")
 msg = "I lost my EOS genesis key"
-print(msg)
 msghash = keccak_256(msg).digest()
   
 v, r, s = ecdsa_raw_sign(msghash, encode_privkey(priv,'hex').decode('hex'))
