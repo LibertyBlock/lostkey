@@ -3,12 +3,6 @@
 
 #define USE_KECCAK
 #include "sha3/sha3.c"
-#define uECC_SUPPORTS_secp160r1 0
-#define uECC_SUPPORTS_secp192r1 0
-#define uECC_SUPPORTS_secp224r1 0
-#define uECC_SUPPORTS_secp256r1 0
-#define uECC_SUPPORTS_secp256k1 1
-#define uECC_SUPPORT_COMPRESSED_POINT 1
 #include "ecc/uECC.c"
 
 using namespace eosio;
